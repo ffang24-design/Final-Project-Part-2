@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# never commit API keys
+.env
+*.key
+.census_api_key
+# large boundary files: download with the instructions in README
+data/raw/tl_2020_*/
+data/raw/*.zip

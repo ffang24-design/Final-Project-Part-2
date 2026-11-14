@@ -1,0 +1,68 @@
+GEOID,NAME,variable,age_group,language,english_ability,estimate,moe
+53033,"King County, Washington",B16004_001E,Total,Total,Total,2167896,
+53033,"King County, Washington",B16004_002E,5 to 17 years,Total,Total,326319,
+53033,"King County, Washington",B16004_003E,5 to 17 years,Only English,Total,225064,2519.0
+53033,"King County, Washington",B16004_004E,5 to 17 years,Spanish,Total,33462,1446.0
+53033,"King County, Washington",B16004_005E,5 to 17 years,Spanish,very well,25128,1299.0
+53033,"King County, Washington",B16004_006E,5 to 17 years,Spanish,well,4917,765.0
+53033,"King County, Washington",B16004_007E,5 to 17 years,Spanish,not well,2853,655.0
+53033,"King County, Washington",B16004_008E,5 to 17 years,Spanish,not at all,564,281.0
+53033,"King County, Washington",B16004_009E,5 to 17 years,Other Indo-European languages,Total,25434,1643.0
+53033,"King County, Washington",B16004_010E,5 to 17 years,Other Indo-European languages,very well,19933,1215.0
+53033,"King County, Washington",B16004_011E,5 to 17 years,Other Indo-European languages,well,3656,765.0
+53033,"King County, Washington",B16004_012E,5 to 17 years,Other Indo-European languages,not well,1613,388.0
+53033,"King County, Washington",B16004_013E,5 to 17 years,Other Indo-European languages,not at all,232,161.0
+53033,"King County, Washington",B16004_014E,5 to 17 years,Asian and Pacific Island languages,Total,29737,1385.0
+53033,"King County, Washington",B16004_015E,5 to 17 years,Asian and Pacific Island languages,very well,23538,1320.0
+53033,"King County, Washington",B16004_016E,5 to 17 years,Asian and Pacific Island languages,well,4676,585.0
+53033,"King County, Washington",B16004_017E,5 to 17 years,Asian and Pacific Island languages,not well,1395,283.0
+53033,"King County, Washington",B16004_018E,5 to 17 years,Asian and Pacific Island languages,not at all,128,66.0
+53033,"King County, Washington",B16004_019E,5 to 17 years,Other languages,Total,12622,1257.0
+53033,"King County, Washington",B16004_020E,5 to 17 years,Other languages,very well,10684,1125.0
+53033,"King County, Washington",B16004_021E,5 to 17 years,Other languages,well,1630,396.0
+53033,"King County, Washington",B16004_022E,5 to 17 years,Other languages,not well,221,124.0
+53033,"King County, Washington",B16004_023E,5 to 17 years,Other languages,not at all,87,113.0
+53033,"King County, Washington",B16004_024E,18 to 64 years,Total,Total,1520678,
+53033,"King County, Washington",B16004_025E,18 to 64 years,Only English,Total,1015614,5240.0
+53033,"King County, Washington",B16004_026E,18 to 64 years,Spanish,Total,111268,2543.0
+53033,"King County, Washington",B16004_027E,18 to 64 years,Spanish,very well,62601,1940.0
+53033,"King County, Washington",B16004_028E,18 to 64 years,Spanish,well,22526,1389.0
+53033,"King County, Washington",B16004_029E,18 to 64 years,Spanish,not well,21069,1480.0
+53033,"King County, Washington",B16004_030E,18 to 64 years,Spanish,not at all,5072,854.0
+53033,"King County, Washington",B16004_031E,18 to 64 years,Other Indo-European languages,Total,128353,3773.0
+53033,"King County, Washington",B16004_032E,18 to 64 years,Other Indo-European languages,very well,96909,3120.0
+53033,"King County, Washington",B16004_033E,18 to 64 years,Other Indo-European languages,well,19024,1225.0
+53033,"King County, Washington",B16004_034E,18 to 64 years,Other Indo-European languages,not well,10243,1136.0
+53033,"King County, Washington",B16004_035E,18 to 64 years,Other Indo-European languages,not at all,2177,685.0
+53033,"King County, Washington",B16004_036E,18 to 64 years,Asian and Pacific Island languages,Total,218518,3406.0
+53033,"King County, Washington",B16004_037E,18 to 64 years,Asian and Pacific Island languages,very well,136459,2989.0
+53033,"King County, Washington",B16004_038E,18 to 64 years,Asian and Pacific Island languages,well,55306,1946.0
+53033,"King County, Washington",B16004_039E,18 to 64 years,Asian and Pacific Island languages,not well,21591,1171.0
+53033,"King County, Washington",B16004_040E,18 to 64 years,Asian and Pacific Island languages,not at all,5162,662.0
+53033,"King County, Washington",B16004_041E,18 to 64 years,Other languages,Total,46925,2622.0
+53033,"King County, Washington",B16004_042E,18 to 64 years,Other languages,very well,29982,1961.0
+53033,"King County, Washington",B16004_043E,18 to 64 years,Other languages,well,12008,1108.0
+53033,"King County, Washington",B16004_044E,18 to 64 years,Other languages,not well,4424,586.0
+53033,"King County, Washington",B16004_045E,18 to 64 years,Other languages,not at all,511,228.0
+53033,"King County, Washington",B16004_046E,65 years and over,Total,Total,320899,
+53033,"King County, Washington",B16004_047E,65 years and over,Only English,Total,252577,1629.0
+53033,"King County, Washington",B16004_048E,65 years and over,Spanish,Total,8546,535.0
+53033,"King County, Washington",B16004_049E,65 years and over,Spanish,very well,3974,470.0
+53033,"King County, Washington",B16004_050E,65 years and over,Spanish,well,1646,336.0
+53033,"King County, Washington",B16004_051E,65 years and over,Spanish,not well,1997,454.0
+53033,"King County, Washington",B16004_052E,65 years and over,Spanish,not at all,929,274.0
+53033,"King County, Washington",B16004_053E,65 years and over,Other Indo-European languages,Total,14903,1185.0
+53033,"King County, Washington",B16004_054E,65 years and over,Other Indo-European languages,very well,7716,790.0
+53033,"King County, Washington",B16004_055E,65 years and over,Other Indo-European languages,well,2823,400.0
+53033,"King County, Washington",B16004_056E,65 years and over,Other Indo-European languages,not well,2954,425.0
+53033,"King County, Washington",B16004_057E,65 years and over,Other Indo-European languages,not at all,1410,296.0
+53033,"King County, Washington",B16004_058E,65 years and over,Asian and Pacific Island languages,Total,40779,1174.0
+53033,"King County, Washington",B16004_059E,65 years and over,Asian and Pacific Island languages,very well,10465,863.0
+53033,"King County, Washington",B16004_060E,65 years and over,Asian and Pacific Island languages,well,12356,781.0
+53033,"King County, Washington",B16004_061E,65 years and over,Asian and Pacific Island languages,not well,11765,775.0
+53033,"King County, Washington",B16004_062E,65 years and over,Asian and Pacific Island languages,not at all,6193,616.0
+53033,"King County, Washington",B16004_063E,65 years and over,Other languages,Total,4094,542.0
+53033,"King County, Washington",B16004_064E,65 years and over,Other languages,very well,1285,319.0
+53033,"King County, Washington",B16004_065E,65 years and over,Other languages,well,1134,309.0
+53033,"King County, Washington",B16004_066E,65 years and over,Other languages,not well,822,304.0
+53033,"King County, Washington",B16004_067E,65 years and over,Other languages,not at all,853,300.0
