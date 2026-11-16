@@ -9,3 +9,4 @@ __pycache__/
 # large boundary files: download with the instructions in README
 data/raw/tl_2020_*/
 data/raw/*.zip
+docs/print.css
