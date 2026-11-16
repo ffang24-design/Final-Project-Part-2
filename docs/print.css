@@ -1,0 +1,126 @@
+@page {
+    size: letter;
+    margin: 0.7in;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 1.2;
+    color: #111;
+    background: white;
+    max-width: none;
+}
+
+h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin-bottom: 12pt;
+}
+
+h2 {
+    font-size: 13pt;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
+}
+
+h3 {
+    font-size: 11.5pt;
+    margin-top: 10pt;
+    margin-bottom: 5pt;
+}
+
+p {
+    margin: 5pt 0 8pt;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    margin: 10pt 0;
+}
+
+th, td {
+    padding: 4pt;
+    border-bottom: 1px solid #ccc;
+}
+
+img {
+    display: block;
+    max-width: 85%;
+    max-height: 3.2in;
+    width: auto;
+    height: auto;
+    margin: 6pt auto;
+    object-fit: contain;
+}
+
+figure {
+    margin: 8pt 0;
+    break-inside: avoid;
+}
+
+figcaption {
+    display: none;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+.figure-pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12pt;
+    align-items: start;
+    break-inside: avoid;
+}
+
+.figure-item {
+    min-width: 0;
+}
+
+.figure-item img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 3in;
+    object-fit: contain;
+}
+
+.figure-item figure {
+    margin: 0;
+}
+
+.figure-item p {
+    font-size: 9pt;
+    margin: 4pt 0;
+}
+
+.figure-item figcaption {
+    display: none;
+}
+
+/* Figure captions below images */
+.figure-item p {
+    margin-top: 5pt;
+    margin-bottom: 8pt;
+}
+
+.figure-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+figure {
+    margin-bottom: 10pt;
+}
+
+figcaption {
+    display: none;
+}

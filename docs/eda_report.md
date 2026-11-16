@@ -5,7 +5,11 @@
 
 ## Summary of Research Questions
 
-We investigate three questions: (1) Which language groups among King County adults aged 65+ have the greatest estimated need for English assistance? (2) How well do Sound Generations' documented program languages meet those needs? (3) What differences between linguistic communities are obscured by broad census categories? We use ACS B16004 for older adults and C16001 for detailed language context among residents aged 5+; the latter cannot identify older-adult needs by individual language.
+We investigate three questions: 
+(1) Which language groups among King County adults aged 65+ have the greatest estimated need for English assistance? 
+(2) How well do Sound Generations' documented program languages meet those needs? 
+(3) What differences between linguistic communities are obscured by broad census categories? 
+We use ACS B16004 for older adults and C16001 for detailed language context among residents aged 5+; the latter cannot identify older-adult needs by individual language.
 
 ## Motivation
 
@@ -13,7 +17,7 @@ Language barriers can complicate older adults' access to transportation, healthc
 
 ## Dataset
 
-We use **2024 ACS five-year estimates** for 495 King County census tracts and **2020 Census tract boundaries**. **B16004** provides four broad non-English language groups and an age 65+ breakdown (495 × 273 raw; 495 × 136 cleaned; 1,980 tract-language records). **C16001** provides 12 detailed language groups for residents aged 5+ (495 × 157 raw; 495 × 78 cleaned; 5,940 tract-language records). All 495 ACS GEOIDs matched the geographic boundaries. The proposed **Sound Generations site/language list** was unavailable for this analysis; therefore, service coverage cannot yet be evaluated.
+We use 2024 ACS five-year estimates for 495 King County census tracts and 2020 Census tract boundaries. B16004 provides four broad non-English language groups and an age 65+ breakdown (495 × 273 raw; 495 × 136 cleaned; 1,980 tract-language records). C16001 provides 12 detailed language groups for residents aged 5+ (495 × 157 raw; 495 × 78 cleaned; 5,940 tract-language records). All 495 ACS GEOIDs matched the geographic boundaries. The proposed Sound Generations site/language list was unavailable for this analysis; therefore, service coverage cannot yet be evaluated.
 
 The cleaned wide ACS tables have no missing values, but derived percentages are undefined for 807/1,980 B16004 records (40.76%) and 1,490/5,940 C16001 records (25.08%), often because the denominator is zero. Coefficients of variation are missing for 1,130 B16004 records (57.07%) and 3,025 C16001 records (50.93%). Undefined values remain missing rather than being converted to zero.
 
@@ -21,7 +25,7 @@ The cleaned wide ACS tables have no missing values, but derived percentages are 
 
 Using Python, pandas, NumPy, Matplotlib, and GeoPandas, we retrieved ACS estimates and metadata, removed annotation columns, converted numeric fields, handled missing values, and reshaped records into tidy tables. We standardized census tract GEOIDs to 11 digits before joining ACS data to 2020 geographic boundaries. All 495 tracts matched.
 
-We define **English assistance need** as speaking English less than “very well” (the “well,” “not well,” and “not at all” categories). For each language group, we calculate estimated need counts and percentages of that group's population, and examine margins of error and coefficients of variation. We summarize tract distributions with descriptive statistics, compare broad B16004 groups with detailed C16001 categories, and visualize counts, percentages, and geographic patterns. The two ACS tables describe different age populations and are not directly interchangeable. Site-language matching functions were developed but not applied to a verified Sound Generations site list.
+We define English assistance need as speaking English less than “very well” (the “well,” “not well,” and “not at all” categories). For each language group, we calculate estimated need counts and percentages of that group's population, and examine margins of error and coefficients of variation. We summarize tract distributions with descriptive statistics, compare broad B16004 groups with detailed C16001 categories, and visualize counts, percentages, and geographic patterns. The two ACS tables describe different age populations and are not directly interchangeable. Site-language matching functions were developed but not applied to a verified Sound Generations site list.
 
 ## EDA Results
 
@@ -51,35 +55,61 @@ We define **English assistance need** as speaking English less than “very well
 
 Asian and Pacific Island language speakers have the highest estimated count and percentage among the four groups. Figures 1 and 2 show why counts and within-group rates answer different questions.
 
-**Figure 1.** Estimated count of adults aged 65+ needing English assistance by broad language group.
+::: {.figure-pair}
+
+::: {.figure-item}
 
 ![Figure 1](../results/figures/plot1_older_adult_need_count.png)
 
-**Figure 2.** Within-group percentage of adults aged 65+ needing English assistance.
+**Figure 1.** Estimated count of adults aged 65+ needing English assistance by broad language group.
+
+:::
+
+::: {.figure-item}
 
 ![Figure 2](../results/figures/plot2_older_adult_need_percentage.png)
+
+**Figure 2.** Within-group percentage of adults aged 65+ needing English assistance.
+
+:::
+
+:::
+
 
 ### Geographic Patterns
 
 Figure 3 maps older-adult language assistance needs across 495 tracts (1,980 tract-language observations). Tract-level estimates can have high sampling uncertainty, so apparent hotspots are exploratory, not definitive tract rankings.
 
-**Figure 3.** Geographic distribution of older-adult English assistance needs in King County.
-
 ![Figure 3](../results/figures/plot3_geographic_language_needs.png)
+
+**Figure 3.** Geographic distribution of older-adult English assistance needs in King County.
 
 ### Detailed Languages and Aggregation (C16001)
 
 Among residents aged 5+, Spanish (61,573), Chinese including Mandarin and Cantonese (47,733), and other Asian and Pacific Island languages (25,302) had the largest estimated assistance-need counts. Vietnamese had a 59.12% within-language need rate, compared with Korean at 46.32% and Chinese at 43.03%. Figures 4 and 5 show the differences between ranking by percentage and by count.
 
-**Figure 4.** Within-language English assistance-need percentages, ages 5+.
+::: {.figure-pair}
+
+::: {.figure-item}
 
 ![Figure 4](../results/figures/plot4_detailed_language_percentage.png)
 
-**Figure 5.** Estimated English assistance-need counts by detailed language, ages 5+.
+**Figure 4.** Within-language English assistance-need percentages, ages 5+.
+
+:::
+
+::: {.figure-item}
 
 ![Figure 5](../results/figures/plot5_detailed_language_count.png)
 
-All 12 detailed categories were mapped to the four broad groups. Within the detailed Asian and Pacific Island group, Chinese accounted for 40.26% of estimated assistance need, other Asian and Pacific Island languages for 21.34%, and Vietnamese for 20.59%. Broad categories therefore conceal substantial variation. These **ages 5+ figures are not estimates specifically for older adults**. Without the Sound Generations site list, we cannot establish whether service offerings match these needs.
+**Figure 5.** Estimated English assistance-need counts by detailed language, ages 5+.
+
+:::
+
+:::
+
+
+All 12 detailed categories were mapped to the four broad groups. Within the detailed Asian and Pacific Island group, Chinese accounted for 40.26% of estimated assistance need, other Asian and Pacific Island languages for 21.34%, and Vietnamese for 20.59%. Broad categories therefore conceal substantial variation. These ages 5+ figures are not estimates specifically for older adults. Without the Sound Generations site list, we cannot establish whether service offerings match these needs.
 
 ## Challenge Goals Update
 
@@ -95,7 +125,7 @@ We completed ACS data cleaning, statistical analysis, geographic visualizations,
 
 ## Testing
 
-We used `src/test_data_cleaning.py` (8 passing tests) and `src/test_eda_stats.py` (5 passing tests). These cover GEOID construction, missing-value and annotation handling, ACS label parsing, age-specific need calculations, percentages and coefficients of variation, language mapping, site-language cleaning, missingness summaries, descriptive statistics, categorical counts, broad/detailed comparisons, and site counts. All **13 tests passed** locally, and `python3 -m flake8 src` reported no violations. Tests use controlled examples and do not eliminate uncertainty in the underlying ACS estimates.
+We used src/test_data_cleaning.py (8 passing tests) and src/test_eda_stats.py (5 passing tests). These cover GEOID construction, missing-value and annotation handling, ACS label parsing, age-specific need calculations, percentages and coefficients of variation, language mapping, site-language cleaning, missingness summaries, descriptive statistics, categorical counts, broad/detailed comparisons, and site counts. All 13 tests passed locally, and python3 -m flake8 src reported no violations. Tests use controlled examples and do not eliminate uncertainty in the underlying ACS estimates.
 
 ## Collaboration
 
