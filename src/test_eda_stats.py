@@ -9,6 +9,11 @@ import eda_stats as es
 
 
 def test_missing_summary():
+    """
+    Tests whether missing_summary correctly counts missing values,
+    calculates missing percentages, and excludes columns without
+    missing values.
+    """
     df = pd.DataFrame({
         'a': [1, np.nan, 3, np.nan],
         'b': [1, 2, 3, 4],
@@ -22,6 +27,11 @@ def test_missing_summary():
 
 
 def test_seven_number_summary():
+    """
+    Tests whether seven_number_summary correctly calculates
+    descriptive statistics, including the mean, minimum,
+    quartiles, maximum, and sample standard deviation.
+    """
     df = pd.DataFrame({
         'value': [1, 2, 3, 4, 5]
     })
@@ -38,6 +48,11 @@ def test_seven_number_summary():
 
 
 def test_category_counts():
+    """
+    Tests whether category_counts correctly counts the occurrences
+    of each category, including missing values, and returns the
+    expected frequency for each language.
+    """
     df = pd.DataFrame({
         'language': ['Spanish', 'Chinese', 'Spanish', None]
     })
@@ -52,6 +67,12 @@ def test_category_counts():
 
 
 def test_broad_vs_detailed():
+    """
+    Tests whether broad_vs_detailed correctly combines broad
+    language-group data with detailed language data, calculates
+    each language's share of its group's total need, and preserves
+    the corresponding older-adult need count.
+    """
     broad = pd.DataFrame({
         'language': ['Asian and Pacific Island Languages'],
         'total_65plus': [100],
@@ -77,6 +98,11 @@ def test_broad_vs_detailed():
 
 
 def test_sites_vs_need():
+    """
+    Tests whether sites_vs_need correctly counts service sites
+    for each language and includes languages with no sites,
+    assigning those languages a site count of zero.
+    """
     sites = pd.DataFrame({
         'site': ['A', 'B', 'C'],
         'language': ['Chinese', 'Chinese', 'Spanish'],
